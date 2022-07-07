@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  body {
+    
+    font-family: 'Finlandica', sans-serif;
+    background-image: linear-gradient(to left, rgb(72, 11, 75), rgb(71, 15, 128), rgb(22, 22, 65), rgb(96, 26, 26));
+    background-size: 500% 100%;
+    animation-name: degrade-animado;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes degrade-animado {
+    0%{
+      background-position-x: 0%;
+    }
+    100%{
+      background-position-x: 100%;
+    }
+  }
+  
+  .container {
+    text-align: center;
+    width: 300px;
+    margin: 60px auto;
+    color: rgb(255, 255, 255);
+  }
+  
+  img {
+    width: 100%;
+  }
+  img.avatar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 3.7px;
+    border: white solid 4px;
+  }
+  
+  .username {
+   font-family: 'Roboto', sans-serif;
+   opacity: 0.8;
+   font-size: 18px;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 48px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    color: white;
+  }
+  
+  ul li a {
+    height: 53px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background: rgb(90, 63, 128);
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+  
+    margin-bottom: 16px;
+    border-radius: 30px;
+  
+    transition: background 400ms;
+  }
+  ul li a:hover {
+    background: rgb(131, 111, 152);
+  }
